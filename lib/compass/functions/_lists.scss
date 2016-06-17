@@ -31,7 +31,7 @@
 
   $full: first-value-of($items);
 
-  @for $i from 2 through length($items) {
+  @for $i from 1 through length($items) {
     $item: nth($items, $i);
     @if $item != null {
       $full: $full $item;
